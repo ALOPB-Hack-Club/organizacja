@@ -21,6 +21,7 @@ layout: ../../layouts/DocumentLayout.astro
       - [Nowy plugin Minecraft](#nowy-plugin-minecraft)
       - [Instalacja Java Development Kit](#instalacja-java-development-kit)
       - [Gradle](#gradle)
+  - cośtam co adam chce
   - [Launcher Minecraft](#launcher-minecraft)
     - [Portablemc](#portablemc)
       - [Instalacja](#instalacja-1)
@@ -54,7 +55,7 @@ Istnieje wiele silników, na których można uruchomić serwer *Minecraft*. Każ
 
 [Bedrock Edition](https://www.minecraft.net/en-us/download/server/bedrock)
 
-Podstawowy silnik. Nie obsługuje modów ani pluginów. Wydawany przez Mojand z każdą wersją gry Minecraft.
+Podstawowy silnik. Nie obsługuje modów ani pluginów. Wydawany przez Mojang z każdą wersją gry Minecraft.
 
 #### CraftBukkit
 
