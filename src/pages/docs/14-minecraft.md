@@ -20,6 +20,7 @@ layout: ../../layouts/DocumentLayout.astro
     - [Ustawienie projektu](#ustawienie-projektu)
       - [Nowy plugin Minecraft](#nowy-plugin-minecraft)
       - [Instalacja Java Development Kit](#instalacja-java-development-kit)
+      - [Konwersja do Kotlina](#konwersja-do-kotlina)
       - [Gradle](#gradle)
   - [Launcher Minecraft](#launcher-minecraft)
     - [Portablemc](#portablemc)
@@ -54,7 +55,7 @@ Istnieje wiele silników, na których można uruchomić serwer *Minecraft*. Każ
 
 [Bedrock Edition](https://www.minecraft.net/en-us/download/server/bedrock)
 
-Podstawowy silnik. Nie obsługuje modów ani pluginów. Wydawany przez Mojand z każdą wersją gry Minecraft.
+Podstawowy silnik. Nie obsługuje modów ani pluginów. Wydawany przez Mojang z każdą wersją gry Minecraft.
 
 #### CraftBukkit
 
@@ -130,12 +131,31 @@ Podaną lokalizację instalacji należy dodać do PATH, aby móc korzystać z na
 
 ![Minecraft plugin dialog](../../../public/minecraft/project-setup/intelij-install-jdk2.png)
 
+#### Konwersja do Kotlina
+
+W tej chwili nasz projekt używa Javy. Ale my chcemy używać Kotlina! Dlatego trzeba wykonać **konwersję**.
+Do tego używa się opcji *Convert Java File to Kotlin File* w menu *Code*.
+
+![Opcja "Convert Java File to Kotlin File"](../../../public/minecraft/intelij-refactor/intelij-convert-to-kotlin1.png)
+
+Powinno pojawić się okienko mówiące że Kotlin nie jest skonfigurowamy. Wybieramy opcję *OK, Configure Kotlin In The Project* aby to zrobić.
+
+![Dialog potwierdzenia](../../../public/minecraft/intelij-refactor/intelij-convert-to-kotlin2.png)
+
+Wybieramy konwersję wszystkich modułów projektu (*All Modules*)
+
+![Wybór modułów](../../../public/minecraft/intelij-refactor/intelij-convert-to-kotlin3.png)
+
+Po zakończeniu tego procesu pliki z Javą powinny się automagicznie zamienić na pliki z Kotlinem.
+
+![MyFirstPlugin.java](../../../public/minecraft/intelij-refactor/intelij-java-main.png)
+![MyFirstPlugin.kt](../../../public/minecraft/intelij-refactor/intelij-kotlin-main.png)
 
 #### Gradle
 
-*build.gardle*
+*build.gradle*
 
-```gradle
+```groovy
 // Pluginy Gradle
 plugins {
     id 'java'
@@ -324,7 +344,7 @@ TODO
 
 Dodajemy `id "com.rikonardo.papermake" version "1.0.6"` na koniec listy pluginów w pliku *build.gradle*.
 
-```gradle
+```groovy
 plugins {
     // ...
     id "com.rikonardo.papermake" version "1.0.6"
