@@ -134,9 +134,9 @@ Podaną lokalizację instalacji należy dodać do PATH, aby móc korzystać z na
 
 #### Gradle
 
-*build.gardle*
+*build.gradle*
 
-```gradle
+```groovy
 // Pluginy Gradle
 plugins {
     id 'java'
@@ -325,7 +325,7 @@ TODO
 
 Dodajemy `id "com.rikonardo.papermake" version "1.0.6"` na koniec listy pluginów w pliku *build.gradle*.
 
-```gradle
+```groovy
 plugins {
     // ...
     id "com.rikonardo.papermake" version "1.0.6"
