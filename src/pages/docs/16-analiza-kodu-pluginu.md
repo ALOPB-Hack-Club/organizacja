@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/DocumentLayout.astro
+---
+
 # Analiza kodu pluginów
 
 To jest kod w Kotlinie, który odpowiada za dodanie do serwera Minecrafta komendy `jump`, która sprawia, że gracz wybija się w powietrze.
