@@ -110,4 +110,4 @@ Klasa `JumpCommand` implementuje interfejs `CommandExecutor`. Oznacza to, że kl
 
 Argumentami funkcji `onCommand` są `sender`, typu  `CommandSender`, czyli byt, który wpisał komendę (gracz lub serwer), natomiast pozostałe argumenty nie są warte naszej uwagi.
 
-Następnie sprawdzamy, czy `sender` jest graczem, co sprawdzamy poprzez keyworda `is`. Jeśli faktycznie jest graczem, to wybijamy go w powietrze, czyli dodajemy szybkość w koordynacie y (góra/dół). `return True` na koniec oznacza zwrócenie informacji, że komenda wykonała się pomyślnie.
+Następnie sprawdzamy, czy `sender` jest graczem, co sprawdzamy poprzez keyworda `is`. Jeśli faktycznie jest graczem, to wybijamy go w powietrze, czyli dodajemy szybkość w koordynacie y (góra/dół). `return true` na koniec oznacza zwrócenie informacji, że komenda wykonała się pomyślnie.
