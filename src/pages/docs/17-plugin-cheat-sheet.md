@@ -1,3 +1,7 @@
+---
+layout: ../../layouts/DocumentLayout.astro
+---
+
 ## Komendy Minecraft
 Plik źródłowy:
 ```kotlin
